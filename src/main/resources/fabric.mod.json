@@ -1,0 +1,30 @@
+{
+	"schemaVersion": 1,
+	"id": "perch",
+	"version": "${version}",
+	"name": "Perch",
+	"description": "A mod for keeping parrots on your shoulder!",
+	"authors": [
+		"Jolkert"
+	],
+	"contact": {
+		"website": "jolkert.github.io",
+		"repo": "https://github.com/Jolkert/Perch"
+	},
+	"license": "MIT",
+	"icon": "assets/perch/icon.png",
+	"environment": "*",
+	"mixins": [
+		"perch.mixins.json"
+	],
+	"entrypoints": {
+		"main": [
+			"io.github.jolkert.perch.Perch"
+		]
+	},
+	"depends": {
+		"fabricloader": ">=${loader_version}",
+		"fabric": "*",
+		"minecraft": "${minecraft_version}"
+	}
+}
