@@ -27,7 +27,7 @@ public abstract class PlayerEntityMixin extends LivingEntity
 			at = @At(value = "INVOKE", target = "Lnet/minecraft/entity/player/PlayerEntity;dropShoulderEntities()V"))
 	public void dropShoulder(PlayerEntity instance)
 	{
-		if (!instance.world.isClient && (instance.isTouchingWater() || abilities.flying || instance.isSleeping() || instance.inPowderSnow))
+		if (!instance.getWorld().isClient && (instance.isTouchingWater() || abilities.flying || instance.isSleeping() || instance.inPowderSnow))
 			((PlayerInvoker)instance).invokeDropShoulderEntities();
 	}
 }
